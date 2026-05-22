@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: shaikmustafa77/emailservice:latest
+        image: bhargaviendhela/emailservice:latest
         ports:
         - containerPort: 8080
         env:
@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: shaikmustafa77/checkoutservice:latest
+          image: bhargaviendhela/checkoutservice:latest
           ports:
           - containerPort: 5050
           readinessProbe:
